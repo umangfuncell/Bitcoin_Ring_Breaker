@@ -21,12 +21,17 @@ MonoBehaviour:
   useLocalMavenRepo: 0
   removeReadExternalStoragePermission: 0
   removeWriteExternalStoragePermission: 0
+  forcePredictiveBackSupportDisable: 1
   customGradleProperties:
   - key: android.useAndroidX
     value: true
   - key: android.enableJetifier
     value: true
   enableMultiDex: 1
+  enableBundleLanguageSplit: 0
+  enableBundleDensitySplit: 0
+  enableBundleAbiSplit: 1
+  enableBundleTextureSplit: 1
   mainActivityUpdated: 0
   mainActivitySplitUpdated: 0
   mainActivity: Coredian.BuildTools.Android.Editor.Library.BoomBitMainActivity

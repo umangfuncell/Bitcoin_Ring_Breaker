@@ -19,17 +19,26 @@ MonoBehaviour:
     sheetsNames: []
     sheetsGuids: []
     preferredSheet: 
+  version: 1
   platformVersionConfigs: []
   useEditorPlatform: 0
   downloadExperimentsInEditor: 0
   uploadConfigOnBuild: 1
+  createApplicationOnBuild: 0
+  skipRemoteConfigHandlerValidation: 0
   useCustomVersionName: 0
   customVersionName: 
+  boomBitHubAppId: 
+  firebaseProjectId: 
+  panelApplicationIdSource: 1
+  panelApplicationIdSourceSettled: 1
   panelApplicationId: 
   webRequestConfiguration:
     requestUrl: https://api.config.boombit.com/api/v1/
     getDiffEndpoint: runtime/get-diff
     getDiffByNameEndpoint: runtime/get-diff-by-name
+    cancelExperimentDiffDistributionEndpoint: runtime/cancel-diff-distribution
     timeoutSeconds: 10
   waitForConsentBeforeDiffDownload: 1
   enableFirebaseFallback: 0
+  sendGroupDiffToAppsFlyer: 0

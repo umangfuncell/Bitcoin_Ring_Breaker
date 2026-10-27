@@ -1,0 +1,9 @@
+{
+	"modules": {
+		"config_service_remote_config": {
+			"installedWith": [
+				"business_logic"
+			]
+		}
+	}
+}

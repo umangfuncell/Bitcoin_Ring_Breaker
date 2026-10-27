@@ -1,19 +1,19 @@
 [
 	{
 		"id": "advertisements",
-		"version": "2.8.4.0",
+		"version": "2.8.10.0",
 		"displayName": "Advertisements",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "advertisements_interface",
-		"version": "2.10.0.0",
+		"version": "2.11.1.0",
 		"displayName": "Advertisements Interface",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "advertisements_pattern_selector",
-		"version": "2.0.1.0",
+		"version": "2.0.2.0",
 		"displayName": "Advertisements Pattern Selector",
 		"subscriptionStream": "public"
 	},
@@ -31,7 +31,7 @@
 	},
 	{
 		"id": "apple_build_tools",
-		"version": "1.7.8.0",
+		"version": "1.8.3.0",
 		"displayName": "Apple Build Tools",
 		"subscriptionStream": "public"
 	},
@@ -49,7 +49,7 @@
 	},
 	{
 		"id": "applovin_max",
-		"version": "1.1.35.0",
+		"version": "1.1.44.1",
 		"displayName": "Applovin MAX Advertisements Provider",
 		"subscriptionStream": "public"
 	},
@@ -61,13 +61,13 @@
 	},
 	{
 		"id": "appsflyer_sdk",
-		"version": "1.3.9.0",
+		"version": "1.3.14.0",
 		"displayName": "Appsflyer SDK",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "attribution_interface",
-		"version": "1.3.1.0",
+		"version": "1.3.2.0",
 		"displayName": "Attribution Interface",
 		"subscriptionStream": "public"
 	},
@@ -85,7 +85,7 @@
 	},
 	{
 		"id": "business_logic",
-		"version": "1.5.5.0",
+		"version": "1.5.8.0",
 		"displayName": "Business Logic",
 		"subscriptionStream": "public"
 	},
@@ -96,20 +96,26 @@
 		"subscriptionStream": "public"
 	},
 	{
+		"id": "config_service_remote_config",
+		"version": "2.0.15.0",
+		"displayName": "Web Configurator Client",
+		"subscriptionStream": "public"
+	},
+	{
 		"id": "consent",
-		"version": "3.1.11.0",
+		"version": "3.1.16.0",
 		"displayName": "Consent",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "consent_interface",
-		"version": "3.6.0.0",
+		"version": "3.7.0.0",
 		"displayName": "Consent Interface",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "core_android_build_tools",
-		"version": "1.15.7.0",
+		"version": "1.15.13.0",
 		"displayName": "Android Build Tools",
 		"subscriptionStream": "public"
 	},
@@ -121,13 +127,13 @@
 	},
 	{
 		"id": "core_json_serializer",
-		"version": "0.17.6.3",
+		"version": "0.17.9.0",
 		"displayName": "JSON Serializer",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "core_logger_configurator",
-		"version": "3.0.2.0",
+		"version": "3.0.3.0",
 		"displayName": "Logger Configurator",
 		"subscriptionStream": "public"
 	},
@@ -139,7 +145,7 @@
 	},
 	{
 		"id": "core_modules_facade",
-		"version": "0.89.0.0",
+		"version": "0.89.2.0",
 		"displayName": "Services Facade",
 		"subscriptionStream": "public"
 	},
@@ -157,19 +163,19 @@
 	},
 	{
 		"id": "core_unity",
-		"version": "5.9.1.0",
+		"version": "5.11.1.0",
 		"displayName": "Unity Toolkit",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "cross_promo_waterfall_source",
-		"version": "2.8.14.0",
+		"version": "2.8.15.0",
 		"displayName": "Cross-Promotion Waterfall Source",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "cross_promotion_advertisements_provider",
-		"version": "1.3.1.0",
+		"version": "1.3.2.0",
 		"displayName": "Cross-Promotion Advertisements Provider",
 		"subscriptionStream": "public"
 	},
@@ -187,8 +193,14 @@
 	},
 	{
 		"id": "decoreator_cross_promotion",
-		"version": "3.4.20.0",
+		"version": "3.4.24.0",
 		"displayName": "Cross-Promotion",
+		"subscriptionStream": "public"
+	},
+	{
+		"id": "dummy_advertisements_provider",
+		"version": "1.3.0.0",
+		"displayName": "Advertisements Dummy Provider",
 		"subscriptionStream": "public"
 	},
 	{
@@ -199,7 +211,7 @@
 	},
 	{
 		"id": "facebook_sdk",
-		"version": "18.0.4.0",
+		"version": "18.0.9.0",
 		"displayName": "Facebook SDK",
 		"subscriptionStream": "public"
 	},
@@ -217,26 +229,32 @@
 	},
 	{
 		"id": "firebase_remote_config",
-		"version": "1.6.1.0",
+		"version": "1.6.2.0",
 		"displayName": "Firebase Remote Config",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "firebase_sdk",
-		"version": "1.1.16.0",
+		"version": "1.1.17.0",
 		"displayName": "Firebase SDK",
+		"subscriptionStream": "public"
+	},
+	{
+		"id": "GADSME",
+		"version": "1.12.5.0",
+		"displayName": "GADSME",
+		"subscriptionStream": "public"
+	},
+	{
+		"id": "GADSME_interface",
+		"version": "1.0.0.3",
+		"displayName": "GADSME Interface",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "game_services_interface",
 		"version": "1.0.2.0",
 		"displayName": "Game Services Interface",
-		"subscriptionStream": "public"
-	},
-	{
-		"id": "hcsdk_facade",
-		"version": "2.6.0.0",
-		"displayName": "HCSDK Facade",
 		"subscriptionStream": "public"
 	},
 	{
@@ -247,19 +265,19 @@
 	},
 	{
 		"id": "inapp_purchases",
-		"version": "2.1.12.0",
+		"version": "2.1.13.0",
 		"displayName": "In-App Purchases",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "inapp_purchases_android_gp",
-		"version": "2.0.13.0",
+		"version": "2.0.14.0",
 		"displayName": "In-App Purchases (Google Play Store)",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "inapp_purchases_apple_storekit1",
-		"version": "2.0.13.0",
+		"version": "2.0.14.0",
 		"displayName": "In-App Purchases (Apple App Store)",
 		"subscriptionStream": "public"
 	},
@@ -271,7 +289,7 @@
 	},
 	{
 		"id": "json_schema",
-		"version": "2.0.0.1",
+		"version": "2.0.1.0",
 		"displayName": "JSON Schema",
 		"subscriptionStream": "public"
 	},
@@ -295,7 +313,7 @@
 	},
 	{
 		"id": "stores_variants",
-		"version": "4.6.2.0",
+		"version": "4.6.8.0",
 		"displayName": "Store Variants",
 		"subscriptionStream": "public"
 	},
@@ -313,19 +331,19 @@
 	},
 	{
 		"id": "user_age_range",
-		"version": "1.0.0.0",
+		"version": "2.0.0.1",
 		"displayName": "User Age Range",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "user_journey_interface",
-		"version": "1.0.3.0",
+		"version": "1.0.4.0",
 		"displayName": "User Journey Interface",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "usercentrics",
-		"version": "2.26.2.4",
+		"version": "2.28.1.1",
 		"displayName": "Usercentrics",
 		"subscriptionStream": "public"
 	}

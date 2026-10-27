@@ -5,6 +5,12 @@ pluginManagement {
 		mavenCentral()
 		maven {
 			url "https://artifactory.boombit.com/artifactory/libs-release"
+			content {
+				includeGroupByRegex "com[.]applifters([.].*)?"
+				includeGroupByRegex "com[.]boombit([.].*)?"
+				includeGroupByRegex "com[.]coredian([.].*)?"
+				includeGroup "com.facebook"
+			}
 		}
 		**ARTIFACTORYREPOSITORY**
 	}
@@ -21,13 +27,16 @@ dependencyResolutionManagement {
 		mavenCentral()
 		maven {
 			url "https://artifactory.boombit.com/artifactory/libs-release"
+			content {
+				includeGroupByRegex "com[.]applifters([.].*)?"
+				includeGroupByRegex "com[.]boombit([.].*)?"
+				includeGroupByRegex "com[.]coredian([.].*)?"
+				includeGroup "com.facebook"
+			}
 		}
 		**ARTIFACTORYREPOSITORY**
 		flatDir {
 			dirs "${project(':unityLibrary').projectDir}/libs"
-		}
-		maven {
-			url "https://artifactory.boombit.com/artifactory/libs-release"
 		}
 		maven {
 			url "https://android-sdk.is.com"

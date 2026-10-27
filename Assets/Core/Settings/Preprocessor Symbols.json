@@ -26,42 +26,42 @@
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_BBGADSME",
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_CRYPTO",
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_LOCALNOTIFICATIONS",
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_WEBVIEW",
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_HCSDK",
             "allowStatusChange": true,
             "type": 0,
             "platform": 0,
-            "isEnabled": true
+            "isEnabled": false
         },
         {
             "symbol": "MES_DEV",

@@ -56,8 +56,16 @@ MonoBehaviour:
       logTypeFilter: 4
       minimumPriority: 0
       readOnlyCategory: 1
+    - category: Coredian.Advertisements.Banners
+      logTypeFilter: 4
+      minimumPriority: 0
+      readOnlyCategory: 1
     - category: Coredian.Advertisements.CrossPromoProvider
       logTypeFilter: 6
+      minimumPriority: 0
+      readOnlyCategory: 1
+    - category: Coredian.Advertisements.DummyProvider
+      logTypeFilter: 4
       minimumPriority: 0
       readOnlyCategory: 1
     - category: Coredian.Advertisements.Selectors
@@ -124,7 +132,23 @@ MonoBehaviour:
       logTypeFilter: 6
       minimumPriority: 0
       readOnlyCategory: 1
+    - category: Coredian.Google.Sheets
+      logTypeFilter: 7
+      minimumPriority: 0
+      readOnlyCategory: 1
     - category: Coredian.InAppPurchases
+      logTypeFilter: 6
+      minimumPriority: 0
+      readOnlyCategory: 1
+    - category: Coredian.Privacy
+      logTypeFilter: 6
+      minimumPriority: 0
+      readOnlyCategory: 1
+    - category: Coredian.Privacy.UserAgeRange
+      logTypeFilter: 6
+      minimumPriority: 0
+      readOnlyCategory: 1
+    - category: Coredian.Privacy.Usercentrics
       logTypeFilter: 6
       minimumPriority: 0
       readOnlyCategory: 1
@@ -138,6 +162,10 @@ MonoBehaviour:
       readOnlyCategory: 1
     - category: Coredian.Tools.ConfigurationValidator.Editor
       logTypeFilter: 7
+      minimumPriority: 0
+      readOnlyCategory: 1
+    - category: Coredian.WebConfigurator
+      logTypeFilter: 6
       minimumPriority: 0
       readOnlyCategory: 1
     - category: Facebook

@@ -169,7 +169,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
         var currencyCode = args.Product.CurrencyCode;
         var id = args.Product.StoreId;
 
-        Debug.LogError("IsFromRestore: " + IsFromRestore + " Product ID: " + productId + " Store ID: " + id);
+        //Debug.LogError("IsFromRestore: " + IsFromRestore + " Product ID: " + productId + " Store ID: " + id);
 
         if (PlayerPrefs.GetInt(MyConstants.StartFtueCompleted, 0) == 0)
             return;
@@ -331,7 +331,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
         if (PlayerPrefs.GetInt(MyConstants.INCOME_BUNDLE_PURCHASED) == 1)
             return;
 
-        Debug.LogError("On Income Pack Success");
+        //Debug.LogError("On Income Pack Success");
         //IAPManager.instance.PurchasePack(IAPPackType.IncomePack);
         ShopManager.instance.BuyIncomeBundlePack();
 
@@ -353,7 +353,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
         if (PlayerPrefs.GetInt(MyConstants.SPEED_POWER_BUNDLE_PURCHASED) == 1)
             return;
 
-        Debug.LogError("On Speed And Power Pack Success");
+        //Debug.LogError("On Speed And Power Pack Success");
         //IAPManager.instance.PurchasePack(IAPPackType.Premiumpack);
         ShopManager.instance.BuySpeedAndPowerPack();
 
@@ -375,7 +375,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
         if (PlayerPrefs.GetInt(MyConstants.MEGA_UPGRADE_BUNDEL_PURCHASED) == 1)
             return;
 
-        Debug.LogError("On Speed And Power Pack Success");
+        //Debug.LogError("On Speed And Power Pack Success");
         //IAPManager.instance.PurchasePack(IAPPackType.Premiumpack);
         ShopManager.instance.BuyMegaUpgradePack();
 
@@ -393,7 +393,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
 
     void OnCoinPackOneSucess()
     {
-        Debug.LogError("On Coin Pack 1 Success");
+        //Debug.LogError("On Coin Pack 1 Success");
         ShopManager.instance.BuyCoinPack1();
 
         GameAnalytics.NewDesignEvent(MyConstants.GA_COIN_PACK_1_SUCCESS);
@@ -402,7 +402,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
 
     void OnCoinPackTwoSucess()
     {
-        Debug.LogError("On Coin Pack 2 Success");
+        //Debug.LogError("On Coin Pack 2 Success");
         ShopManager.instance.BuyCoinPack2();
 
         GameAnalytics.NewDesignEvent(MyConstants.GA_COIN_PACK_2_SUCCESS);
@@ -411,7 +411,7 @@ public class InAppManagerUnityIAP_Boombit : InAppsAbstractClass
 
     void OnCoinPackThreeSucess()
     {
-        Debug.LogError("On Coin Pack 3 Success");
+        //Debug.LogError("On Coin Pack 3 Success");
         ShopManager.instance.BuyCoinPack3();
 
         GameAnalytics.NewDesignEvent(MyConstants.GA_COIN_PACK_3_SUCCESS);

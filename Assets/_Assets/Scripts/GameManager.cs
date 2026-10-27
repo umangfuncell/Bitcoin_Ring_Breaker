@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    [SerializeField] private GameObject loading;
     [SerializeField] private Ring[] rings;
     [SerializeField] private Color[] ringColors;
     [SerializeField] private BallSpawner[] ballSpawners;
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     public void ShowShop()
     {
         ShopManager.instance.OpenShopPanle();
-        GameAnalyticsController.InfiniteGameProgressionRelated.LogInfiniteGameStartEvent("ring_level",5);
+        GameAnalyticsController.InfiniteGameProgressionRelated.LogInfiniteGameStartEvent("ring_level", 5);
     }
 
     void ChangeSkin()
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     {
         Setup();
         EnableAllBallSpawner();
-        StartCoroutine(ShowInterstitial());
+        //StartCoroutine(ShowInterstitial());
     }
 
     IEnumerator ShowInterstitial()
@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(_interstitialCooldown);
-            HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME,null);
+            HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME, null);
         }
     }
 
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
         UpdateHealthUi();
         healthUi.SetActive(true);
     }
-    
+
     public static void Shuffle<T>(T[] array)
     {
         for (int i = 0; i < array.Length; i++)
@@ -195,25 +195,30 @@ public class GameManager : MonoBehaviour
         double currentHealth = rings[_currentRingIndex].GetHealth();
         if (currentHealth <= 0)
         {
-            PlayRingDestroyParticle(ringColors[_currentRingIndex],rings[_currentRingIndex].GetRadius());
+            PlayRingDestroyParticle(ringColors[_currentRingIndex], rings[_currentRingIndex].GetRadius());
             _currentRingIndex++;
-            if (_currentRingIndex ==_totalActiavtedRings)
+            if (_currentRingIndex == _totalActiavtedRings)
             {
                 for (int i = 0; i < ballSpawners.Length; i++)
                 {
                     ballSpawners[i].StopSpawning();
                 }
 
-                ShowLevelProgressionEvent(ringSet,ProgressionType.Finish);
+                ShowLevelProgressionEvent(ringSet, ProgressionType.Finish);
                 ringSet++;
                 PlayerPrefs.SetInt(MyConstants.RING_LEVEL, ringSet);
                 healthUi.SetActive(false);
 
-                // EVERY LEVEL IS
-                HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME, null);
+                loading.SetActive(true);
 
-                Invoke(nameof(Setup),2f);
-                Invoke(nameof(EnableAllBallSpawner),2f);
+                // EVERY LEVEL IS
+                HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME, () =>
+                {
+                    loading.SetActive(false);
+                });
+
+                Invoke(nameof(Setup), 2f);
+                Invoke(nameof(EnableAllBallSpawner), 2f);
             }
         }
 
@@ -248,7 +253,7 @@ public class GameManager : MonoBehaviour
             EnableBallSpawner(i);
         }
     }
-    
+
     void EnableBallSpawner(int ballSpawnerIndex)
     {
         ballSpawners[ballSpawnerIndex].Spawn();
@@ -268,21 +273,21 @@ public class GameManager : MonoBehaviour
 
         EconomyManager.instance.IncreaseEconomy(money);
         Vector3 spawnPos = _cam.WorldToScreenPoint(pos + dir * 0.6f);
-        GameObject obj = ObjectPooling.Instance.Get("float_text",spawnPos);
+        GameObject obj = ObjectPooling.Instance.Get("float_text", spawnPos);
         string moneyText = NumberFormatter.FormatNumberSmall(money);
         Color textColor = IsCriticalHit ? CriticalOrange : Color.white;
-        obj.GetComponent<FloatingText>().Show(moneyText,textColor);
+        obj.GetComponent<FloatingText>().Show(moneyText, textColor);
     }
-    
+
     private static float LastLevelStartTime;
     public static void ShowLevelProgressionEvent(int levelNumber, ProgressionType progressionType)
     {
-        if(progressionType == ProgressionType.Start)
+        if (progressionType == ProgressionType.Start)
         {
             LastLevelStartTime = Time.realtimeSinceStartup;
             GameAnalyticsController.LevelBasedProgressionRelated.LogLevelStartEventWithTime(levelNumber);
         }
-        else if(progressionType == ProgressionType.Fail)
+        else if (progressionType == ProgressionType.Fail)
         {
             var levelData = new GameAnalyticsController.LevelProgressTimeData(levelNumber, LastLevelStartTime);
             GameAnalyticsController.LevelBasedProgressionRelated.LogLevelFailEventWithTime(levelData);
@@ -293,7 +298,7 @@ public class GameManager : MonoBehaviour
             GameAnalyticsController.LevelBasedProgressionRelated.LogLevelEndEventWithTime(levelData);
         }
     }
-    
+
     public enum ProgressionType
     {
         Start,

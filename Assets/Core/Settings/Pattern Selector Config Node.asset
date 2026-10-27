@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf13de9c3c9247969f5abc2e5b85deff, type: 3}
+  m_Name: Pattern Selector Config Node
+  m_EditorClassIdentifier: 
+  useThisConfig: 1
+  isUpToDateWithConfig: 1
+  googleSheetsCache:
+    url: 
+    sheetsNames: []
+    sheetsGuids: []
+    preferredSheet: 
+  selectorConfigManual:
+    adUnit: 
+    defaultPattern: m
+    payerPatternOn: 0
+    payerPattern: cmm
+    ecpmOn: 0
+    ecpmThreshold: 0.01
+    timeoutMs: 45000
+    loopPayerPattern: 0
+    persistData: 1
+    useOpenRtbInNoFill: 1
+    openRtbBidFloor: 0
+  loadRemoteSelectorConfiguration: 1
