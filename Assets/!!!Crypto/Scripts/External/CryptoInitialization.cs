@@ -10,7 +10,7 @@ namespace MES.Crypto
         {
             yield return new WaitForSecondsRealtime(delayForInit);
 #if MES_CRYPTO
-            //MES.Crypto.CryptoManager.Instance.Initialize();
+            MES.Crypto.CryptoManager.Instance.Initialize();
 #endif
         }
     }

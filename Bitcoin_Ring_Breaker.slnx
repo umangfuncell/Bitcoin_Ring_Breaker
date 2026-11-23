@@ -3,6 +3,7 @@
   <Project Path="Coredian.WebConfiguratorClient.csproj" />
   <Project Path="facebook_sdk_sdk.csproj" />
   <Project Path="CoreUnity-Editor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="ModulesFacade-Editor.csproj" />
   <Project Path="inapp_purchases_configuration.csproj" />
   <Project Path="JsonSerializer.csproj" />
@@ -19,6 +20,7 @@
   <Project Path="Core.csproj" />
   <Project Path="Coredian.PluginsInterface.csproj" />
   <Project Path="Coredian.Advertisements.AppLovinMAX.csproj" />
+  <Project Path="GadsmeSDK.csproj" />
   <Project Path="Android Build Tools-Editor.csproj" />
   <Project Path="Coredian.CrossPromoInterface.csproj" />
   <Project Path="Coredian.Privacy.Usercentrics.Android-Editor.csproj" />
@@ -51,7 +53,6 @@
   <Project Path="Core.DataInterface.csproj" />
   <Project Path="Coredian.Attribution.AppsFlyer.csproj" />
   <Project Path="Core.ConsentInterface.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Coredian.Privacy.Usercentrics.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
   <Project Path="Coredian.Facebook.csproj" />
@@ -61,7 +62,6 @@
   <Project Path="CrossPromo-Dummy.csproj" />
   <Project Path="appsflyer_sdk_apple_editor.csproj" />
   <Project Path="Coredian.FacebookInterface.csproj" />
-  <Project Path="AppsFlyerSDK.csproj" />
   <Project Path="Assets.csproj" />
   <Project Path="Coredian.Advertisements.Selectors.Editor-Editor.csproj" />
   <Project Path="inapp_purchases_android_gp_configuration.csproj" />
@@ -79,6 +79,7 @@
   <Project Path="Coredian.Attribution.Interface.csproj" />
   <Project Path="MonoBehaviourHost-Editor.csproj" />
   <Project Path="Coredian.AppLovinMAX.Apple.Editor-Editor.csproj" />
+  <Project Path="AppsFlyerSDK.csproj" />
   <Project Path="Coredian.FirebaseCrashlytics.csproj" />
   <Project Path="Coredian.Privacy.UserAgeRange.csproj" />
   <Project Path="firebase_sdk_apple_editor.csproj" />
@@ -100,6 +101,7 @@
   <Project Path="Coredian.Consent-Editor.csproj" />
   <Project Path="NativeUtilities.csproj" />
   <Project Path="usercentrics_dummy.csproj" />
+  <Project Path="Coredian.Gadsme.csproj" />
   <Project Path="user_age_range_dummy.csproj" />
   <Project Path="Skadnetwork-Editor.csproj" />
   <Project Path="Coredian.GameServicesInterface.csproj" />
@@ -116,7 +118,6 @@
   <Project Path="CryptoExternal.csproj" />
   <Project Path="Coredian.Privacy.UserAgeRange.Apple-Editor.csproj" />
   <Project Path="firebase_remote_config_apple_editor.csproj" />
-  <Project Path="Coredian.Gadsme.csproj" />
   <Project Path="Coredian.GadsmeInterface.csproj" />
   <Project Path="inapp_purchases_apple_storekit1_configuration.csproj" />
 </Solution>

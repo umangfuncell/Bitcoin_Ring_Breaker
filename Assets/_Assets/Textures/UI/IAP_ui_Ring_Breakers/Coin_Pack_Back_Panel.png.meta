@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: fa137e5081177634cbedffba68d699f5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2658383245293704610
+    second: Coin_Pack_Back_Panel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +124,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Coin_Pack_Back_Panel_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1046
+        height: 1098
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a2b6be5868b1bd0800000000000000
+      internalID: -2658383245293704610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []

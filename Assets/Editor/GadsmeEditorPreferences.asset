@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1888551886, guid: 8b6805111e0e5449db491bf28f2479f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3f3b5069ff74d9152894a3eec1dcbe, type: 3}
   m_Name: GadsmeEditorPreferences
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::GadsmeSDK.Editor.GadsmeEditorPreferences
   ApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiZ2FtZSIsImF1ZCI6ImFwaS5nYWRzbWUuY29tIiwiaXNzIjoiYXBpLmdhZHNtZS5jb20iLCJzdWIiOiJjbW10Y3liaXAwMDNieTUwamdzd3MzMzZyIn0.x-Aea1MRF9ynZdOUvRZIltXYIIOOS3UnCdupye9WCkY
   Game:
     id: cmmtcybip003by50jgsws336r
@@ -21,6 +21,6 @@ MonoBehaviour:
       name: Mobile Esports SP. Z O.O.
     placements: []
   AdChannels: []
-  CheckApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiZ2FtZSIsImF1ZCI6ImFwaS5nYWRzbWUuY29tIiwiaXNzIjoiYXBpLmdhZHNtZS5jb20iLCJzdWIiOiJjbW10Y3liaXAwMDNieTUwamdzd3MzMzZyIn0.x-Aea1MRF9ynZdOUvRZIltXYIIOOS3UnCdupye9WCkY
+  CheckedApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiZ2FtZSIsImF1ZCI6ImFwaS5nYWRzbWUuY29tIiwiaXNzIjoiYXBpLmdhZHNtZS5jb20iLCJzdWIiOiJjbW10Y3liaXAwMDNieTUwamdzd3MzMzZyIn0.x-Aea1MRF9ynZdOUvRZIltXYIIOOS3UnCdupye9WCkY
   SelectedAdFormatTab: 0
   SnapTool: 1

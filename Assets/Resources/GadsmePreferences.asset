@@ -9,21 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2084442633, guid: d9a3ebe27ba204fb7a37e7cd6bf19526, type: 3}
+  m_Script: {fileID: 11500000, guid: c2d3cd703d6ff6b4a65f6e9958ffded5, type: 3}
   m_Name: GadsmePreferences
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: GadsmeSDK::GadsmeSDK.GadsmePreferences
   gameId: cmmtcybip003by50jgsws336r
   forceSandbox: 0
   maxConcurrentRequests: 3
   maxActiveAdContents: 10
+  maxActiveVideoAdContents: -1
   videoAdVolume: 1
-  adWatermarkOffset: 0.003
+  videoAdAudioEnabled: 1
   interactionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   visibilityLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  LogLevel: 1
+  logLevel: 1
   showVisibilityRays: 0
+  placementDebugOverlay: 0
   debugRenderingEngine: 0
