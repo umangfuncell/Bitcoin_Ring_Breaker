@@ -34,7 +34,7 @@ public class HCSDKManager : HostMonoBehaviour
     private string _placementInter;
 
     // Interstitial cooldown: timestamp-based instead of a 1s InvokeRepeating tick.
-    int AD_WAIT_TIME = 20;
+    int AD_WAIT_TIME = 60;
     float _lastAdTime;
     int TimeSeconds => Mathf.FloorToInt(Time.unscaledTime - _lastAdTime);
 

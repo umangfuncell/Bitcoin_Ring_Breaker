@@ -35,12 +35,11 @@ dependencyResolutionManagement {
 			}
 		}
 		**ARTIFACTORYREPOSITORY**
-// Android Resolver Repos Start
-        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
-        mavenLocal()
-// Android Resolver Repos End
 		flatDir {
 			dirs "${project(':unityLibrary').projectDir}/libs"
+		}
+		maven {
+			url "https://maven.google.com/"
 		}
 		maven {
 			url "https://android-sdk.is.com"

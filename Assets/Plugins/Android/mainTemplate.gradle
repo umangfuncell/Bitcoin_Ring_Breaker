@@ -7,10 +7,11 @@ dependencies {
 	implementation 'com.coredian:google-advertising-id:1.0.6.2'
 	implementation platform('org.jetbrains.kotlin:kotlin-bom:1.9.0')
 	implementation 'androidx.work:work-runtime:2.7.1'
-	implementation 'com.coredian:core-common:1.15.13.0'
-	implementation 'com.appsflyer:af-android-sdk:6.18.1'
-	implementation 'com.appsflyer:unity-wrapper:6.18.1'
+	implementation 'com.coredian:core-common:1.15.14.0'
+	implementation 'com.appsflyer:af-android-plugin-bridge:7.0.13'
+	implementation 'com.appsflyer:unity-wrapper:7.0.16'
 	implementation 'com.android.installreferrer:installreferrer:2.1'
+	implementation 'com.google.android.gms:play-services-ads-identifier:18.3.0'
 	implementation 'com.boombit:crosspromotion:3.4.24.0'
 	implementation 'com.facebook:facebook-android-wrapper:18.0.9.0'
 	implementation 'com.google.firebase:firebase-crashlytics'
@@ -18,17 +19,20 @@ dependencies {
 	implementation 'com.boombit:firebase-crashlytics:1.1.5.0'
 	implementation 'com.google.firebase:firebase-analytics'
 	implementation 'com.google.firebase:firebase-config'
-	implementation 'com.coredian:firebase-remote-config:1.6.2.0'
+	implementation 'com.coredian:firebase-remote-config:1.6.3.0'
 	implementation enforcedPlatform('com.google.firebase:firebase-bom:34.6.0')
 	implementation 'com.google.firebase:firebase-installations'
 	implementation 'com.google.android.gms:play-services-auth:21.4.0'
 	implementation 'com.boombit:firebase-sdk:1.1.17.0'
-	implementation 'com.coredian:inapppurchases-google:2.0.14.0'
+	implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0'
+	implementation 'androidx.webkit:webkit:1.12.1'
+	implementation 'androidx.media3:media3-exoplayer:1.2.1'
+	implementation 'com.coredian:inapppurchases-google:2.0.21.0'
 	implementation 'com.google.android.play:age-signals:0.0.3'
 	implementation 'com.boombit.useragerange:core-useragerange:2.0.0.1'
-	implementation 'com.coredian.privacy:core-usercentrics:2.28.1.1'
+	implementation 'com.coredian.privacy:core-usercentrics:2.28.3.0'
 	implementation 'com.applovin:applovin-sdk:13.6.4'
-	implementation 'com.appsflyer:purchase-connector:2.2.0'
+	implementation 'com.appsflyer:purchase-connector:2.3.0'
 	implementation 'com.applovin.mediation:amazon-tam-adapter:12.0.1.0'
 	implementation 'com.amazon.android:aps-sdk:11.3.0'
 	implementation 'com.applovin.mediation:bigoads-adapter:5.10.1.0'
@@ -52,10 +56,6 @@ dependencies {
 	configurations {
 		implementation.exclude group: 'com.android.support', module: '*'
 	}
-// Android Resolver Dependencies Start
-    implementation 'com.google.android.gms:play-services-appset:16.0.2' // Assets/GameAnalytics/Editor/Android/Dependencies.xml:4
-    implementation 'com.google.android.instantapps:instantapps:1.1.0' // Assets/GameAnalytics/Editor/Android/Dependencies.xml:3
-// Android Resolver Dependencies End
 	**DEPS**
 }
 
@@ -84,17 +84,6 @@ Set<String> jarExcludes = [
 subprojects {
 	afterEvaluate {project ->
 		if (project.hasProperty("android")) {
-// Android Resolver Exclusions Start
-android {
-  packagingOptions {
-      exclude ('/lib/armeabi/*' + '*')
-      exclude ('/lib/mips/*' + '*')
-      exclude ('/lib/mips64/*' + '*')
-      exclude ('/lib/x86/*' + '*')
-      exclude ('/lib/x86_64/*' + '*')
-  }
-}
-// Android Resolver Exclusions End
 			android {
 				packaging {
 					pickFirsts += jarPickFirsts
@@ -120,6 +109,10 @@ android {
 		targetCompatibility JavaVersion.VERSION_17
 	}
 	
+	buildFeatures {
+		resValues = true
+	}
+	
 	defaultConfig {
 		minSdk **MINSDKVERSION**
 		targetSdk **TARGETSDKVERSION**
@@ -132,7 +125,7 @@ android {
 		consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
 		**DEFAULT_CONFIG_SETUP**
 		
-		resValue 'string', 'com.crashlytics.android.build_id', '1775fd09-ece6-47cb-a353-a600116a9123'
+		resValue 'string', 'com.crashlytics.android.build_id', '3ccb80f3-8966-4e0c-9d9d-377244ff47c0'
 		resValue 'string', 'google_app_id', '1:273531286808:android:138fd41d201290dd3f9a6d'
 		resValue 'string', 'project_id', 'bitcoin-ring-breaker'
 		resValue 'string', 'gcm_defaultSenderId', '273531286808'

@@ -211,14 +211,7 @@ public class GameManager : MonoBehaviour
 
                 loading.SetActive(true);
 
-                // EVERY LEVEL IS
-                HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME, () =>
-                {
-                    loading.SetActive(false);
-                });
-
-                Invoke(nameof(Setup), 2f);
-                Invoke(nameof(EnableAllBallSpawner), 2f);
+                Invoke(nameof(InterLogic), 1.5f);
             }
         }
 
@@ -228,6 +221,18 @@ public class GameManager : MonoBehaviour
             _fillBar.color = ringColors[_currentRingIndex];
             _fillBar.fillAmount = (float)(rings[_currentRingIndex].GetHealth() / healthList[_currentRingIndex]);
         }
+    }
+
+    void InterLogic()
+    {
+        // EVERY LEVEL IS
+        HCSDKManager.INSTANCE.ShowInterstitialAd(HCSDKManager.IS_LOAD_NAME, () =>
+        {
+            loading.SetActive(false);
+
+            Invoke(nameof(Setup), 2f);
+            Invoke(nameof(EnableAllBallSpawner), 2f);
+        });
     }
 
     void PlayRingDestroyParticle(Color newColor, float newRadius)

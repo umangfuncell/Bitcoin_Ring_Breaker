@@ -1,7 +1,7 @@
 [
 	{
 		"id": "advertisements",
-		"version": "2.8.10.0",
+		"version": "2.8.11.0",
 		"displayName": "Advertisements",
 		"subscriptionStream": "public"
 	},
@@ -31,7 +31,7 @@
 	},
 	{
 		"id": "apple_build_tools",
-		"version": "1.8.3.0",
+		"version": "1.8.4.0",
 		"displayName": "Apple Build Tools",
 		"subscriptionStream": "public"
 	},
@@ -49,7 +49,7 @@
 	},
 	{
 		"id": "applovin_max",
-		"version": "1.1.44.1",
+		"version": "1.1.46.0",
 		"displayName": "Applovin MAX Advertisements Provider",
 		"subscriptionStream": "public"
 	},
@@ -61,7 +61,7 @@
 	},
 	{
 		"id": "appsflyer_sdk",
-		"version": "1.3.14.0",
+		"version": "1.4.4.0",
 		"displayName": "Appsflyer SDK",
 		"subscriptionStream": "public"
 	},
@@ -73,7 +73,7 @@
 	},
 	{
 		"id": "boombit_ids_importer",
-		"version": "3.1.3.0",
+		"version": "3.1.5.0",
 		"displayName": "Boombit Ids Importer",
 		"subscriptionStream": "public"
 	},
@@ -85,7 +85,7 @@
 	},
 	{
 		"id": "business_logic",
-		"version": "1.5.8.0",
+		"version": "1.5.9.0",
 		"displayName": "Business Logic",
 		"subscriptionStream": "public"
 	},
@@ -97,7 +97,7 @@
 	},
 	{
 		"id": "config_service_remote_config",
-		"version": "2.0.15.0",
+		"version": "2.0.16.0",
 		"displayName": "Web Configurator Client",
 		"subscriptionStream": "public"
 	},
@@ -115,7 +115,7 @@
 	},
 	{
 		"id": "core_android_build_tools",
-		"version": "1.15.13.0",
+		"version": "1.15.14.0",
 		"displayName": "Android Build Tools",
 		"subscriptionStream": "public"
 	},
@@ -139,7 +139,7 @@
 	},
 	{
 		"id": "core_main",
-		"version": "3.9.0.1",
+		"version": "3.9.1.0",
 		"displayName": "Foundation",
 		"subscriptionStream": "public"
 	},
@@ -175,7 +175,7 @@
 	},
 	{
 		"id": "cross_promotion_advertisements_provider",
-		"version": "1.3.2.0",
+		"version": "1.3.3.0",
 		"displayName": "Cross-Promotion Advertisements Provider",
 		"subscriptionStream": "public"
 	},
@@ -229,7 +229,7 @@
 	},
 	{
 		"id": "firebase_remote_config",
-		"version": "1.6.2.0",
+		"version": "1.6.3.0",
 		"displayName": "Firebase Remote Config",
 		"subscriptionStream": "public"
 	},
@@ -241,7 +241,7 @@
 	},
 	{
 		"id": "GADSME",
-		"version": "1.12.5.0",
+		"version": "2.0.32.0",
 		"displayName": "GADSME",
 		"subscriptionStream": "public"
 	},
@@ -265,25 +265,25 @@
 	},
 	{
 		"id": "inapp_purchases",
-		"version": "2.1.13.0",
+		"version": "2.1.19.0",
 		"displayName": "In-App Purchases",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "inapp_purchases_android_gp",
-		"version": "2.0.14.0",
+		"version": "2.0.21.0",
 		"displayName": "In-App Purchases (Google Play Store)",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "inapp_purchases_apple_storekit1",
-		"version": "2.0.14.0",
+		"version": "2.0.15.0",
 		"displayName": "In-App Purchases (Apple App Store)",
 		"subscriptionStream": "public"
 	},
 	{
 		"id": "inapp_purchases_interface",
-		"version": "2.1.0.2",
+		"version": "2.1.1.0",
 		"displayName": "In-App Purchases Interface",
 		"subscriptionStream": "public"
 	},
@@ -313,7 +313,7 @@
 	},
 	{
 		"id": "stores_variants",
-		"version": "4.6.8.0",
+		"version": "4.6.10.0",
 		"displayName": "Store Variants",
 		"subscriptionStream": "public"
 	},
@@ -343,7 +343,7 @@
 	},
 	{
 		"id": "usercentrics",
-		"version": "2.28.1.1",
+		"version": "2.28.3.0",
 		"displayName": "Usercentrics",
 		"subscriptionStream": "public"
 	}

@@ -43,6 +43,10 @@ android {
 		targetCompatibility JavaVersion.VERSION_17
 	}
 	
+	buildFeatures {
+		buildConfig = true
+	}
+	
 	defaultConfig {
 		minSdk **MINSDKVERSION**
 		targetSdk **TARGETSDKVERSION**
@@ -75,12 +79,12 @@ android {
 	buildTypes {
 		debug {
 			minifyEnabled **MINIFY_DEBUG**
-			proguardFiles getDefaultProguardFile('proguard-android.txt')**SIGNCONFIG**
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')**SIGNCONFIG**
 			jniDebuggable true
 		}
 		release {
 			minifyEnabled **MINIFY_RELEASE**
-			proguardFiles getDefaultProguardFile('proguard-android.txt')**SIGNCONFIG**
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')**SIGNCONFIG**
 		}
 	}
 	

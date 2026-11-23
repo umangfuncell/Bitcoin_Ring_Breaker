@@ -6,8 +6,8 @@ dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 	implementation fileTree(dir: '../libs', include: ['*.jar'])
 	implementation 'com.boombit:firebase-crashlytics:1.1.5.0'
-	implementation 'com.coredian.privacy:core-usercentrics:2.28.1.1'
-	implementation 'com.coredian:core-common:1.15.13.0'
+	implementation 'com.coredian.privacy:core-usercentrics:2.28.3.0'
+	implementation 'com.coredian:core-common:1.15.14.0'
 	implementation 'com.android.support:multidex:1.0.3'
 }
 
