@@ -29,7 +29,7 @@
     <module id="core_monobehaviour_host" version="0.16.7.2" subscriptionStream="public" />
     <module id="core_native_utilities" version="0.4.0.2" subscriptionStream="public" />
     <module id="core_unity" version="5.11.1.0" subscriptionStream="public" />
-    <module id="cross_promo_waterfall_source" version="2.8.15.0" subscriptionStream="public" />
+    <module id="cross_promo_waterfall_source" version="2.8.16.2" subscriptionStream="alpha" />
     <module id="cross_promotion_advertisements_provider" version="1.3.3.0" subscriptionStream="public" />
     <module id="cross_promotion_interface" version="1.6.0.0" subscriptionStream="public" />
     <module id="data_interface" version="0.12.0.2" subscriptionStream="public" />
