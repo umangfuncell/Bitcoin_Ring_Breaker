@@ -209,9 +209,12 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt(MyConstants.RING_LEVEL, ringSet);
                 healthUi.SetActive(false);
 
-                loading.SetActive(true);
+                //loading.SetActive(true);
 
-                Invoke(nameof(InterLogic), 1.5f);
+                //Invoke(nameof(InterLogic), 1.5f);
+
+                Invoke(nameof(Setup), 2f);
+                Invoke(nameof(EnableAllBallSpawner), 2f);
             }
         }
 
